@@ -3,8 +3,10 @@ title: "Covid91 vaccine study Final2021"
 author: "Put your name here!"
 date: "put the date here"
 output: 
-    html_document:
+  html_document:
+    number_sections: true
     toc: true
+
 ---
 
 ```{r include=FALSE,echo=FALSE}
