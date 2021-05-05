@@ -116,12 +116,46 @@ fisher.test(table2)
 
 # DRUG USERS
 
+```{r}
+Druggiedata <- filter(FinalData,DrugUser== "yes")
+Druggiedata$DrugUser <- as.factor(Druggiedata$DrugUser)
+Druggiedata$infected=factor(Druggiedata$infected)
+Druggiedata$infected<-relevel(Druggiedata$infected, "OK")
+```
+
 ## Bar Chart
+
+```{r}
+Druggies <- Druggiedata %>% group_by(infected, treatment) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(Druggies,aes(x=infected,y=count,fill=treatment))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(Druggies,aes(x=infected,y=prcnt*100,fill=treatment)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
 
 ##  Numerical Summary
 
+```{r}
+table3 <- xtabs(~treatment + infected, data=Druggiedata)
+rowPerc(table3)
+colPerc(table3)
+print(table3)
+```
+
 ## Inferential Results
 
+```{r}
+chisq.test(table3)
+chisqtestGC(table3)
+fisher.test(table3)
+```
 
 # LGBTQ
 
