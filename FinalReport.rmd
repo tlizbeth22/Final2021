@@ -29,12 +29,39 @@ The first step is isolating the subpopulations of Males, Females, LGBTQ, and Dru
 
 # MALES
 
+## Bar Chart
+
+##  Numerical Summary
+
+## Inferential Results
+
 
 # FEMALES
 
+## Bar Chart
+
+##  Numerical Summary
+
+## Inferential Results
+
+
 # DRUG USERS
 
+## Bar Chart
+
+##  Numerical Summary
+
+## Inferential Results
+
+
 # LGBTQ
+
+## Bar Chart
+
+##  Numerical Summary
+
+## Inferential Results
+
 
 # Discussion & Conclusion
 
