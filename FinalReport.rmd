@@ -22,3 +22,19 @@ FinalData <- OldData %>% mutate(infected = recode(infected, aids = "covid", none
 
 A new  preventative vaccine (covid91) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups consisting of Males, Females, just the drug users, and just those in the LGBTQ community. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
+#  Methods 
+
+The first step is isolating the subpopulations of Males, Females, LGBTQ, and DrugUsers.
+
+
+# MALES
+
+
+# FEMALES
+
+# DRUG USERS
+
+# LGBTQ
+
+# Discussion & Conclusion
+
