@@ -53,6 +53,8 @@ basicCC <- ggplot(Males,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+This barchart shows that out of the approximately 340 Males who were infected with Covid-19, 57% were given the drug, and 43% were given the placebo.
+
 ##  Numerical Summary
 
 ```{r}
@@ -62,6 +64,8 @@ colPerc(table1)
 print(table1)
 ```
 
+The table shows that about 340 males were infected with Covid-19 out of approximately 10,400 males in the study. The table shows that 3.72 % of males who receive the drug got Covid 19, and 2.55% of the males who got the placebo contracted Covid-19. The table also shows, that males that got the vaccine were about 50% more likely to contract Covid-19, this suggest that the vaccine is not effective for males.
+
 ## Inferential Results
 
 ```{r}
@@ -69,6 +73,12 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+The Chi Squared table shows that the P-Value of 0.0006181 is so small that it is highly unlikely that the results are by chance.  
+$H_0$ the null hypothesis given taking the vaccine there is no difference of whether males can contract Covid-19 or not.  
+$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a male contracts Covid-19. Therefore we Reject the Null Hypothesis.
+
+The odds ratio from the Fisher Exact test is 1.47:1, when taking the odds radio and computing it into a percent of effectiveness by using the formula O/(1+O)*100 you get 59.5% effectiveness.
 
 # FEMALES
 
