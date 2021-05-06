@@ -106,6 +106,8 @@ basicCC <- ggplot(Females,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+This barchart shows that out of the approximately 607 Females who were infected with Covid-19, 32% were given the drug, and 66% were given the placebo. 
+
 
 ##  Numerical Summary
 
@@ -116,6 +118,8 @@ colPerc(table2)
 print(table2)
 ```
 
+The table shows that about 607 Females were infected with Covid-19 out of approximately 9,200 Females in the study. The table also shows that 4.44 % of Females who receive the drug got Covid-19, and 8.67% of the Females who got the placebo contracted Covid-19. Lastly the table shows, that Females that got the vaccine were about 67% less likely to contract Covid-19, this shows that the vaccine is effective for Females.
+
 ## Inferential Results
 
 ```{r}
@@ -123,6 +127,18 @@ chisq.test(table2)
 chisqtestGC(table2)
 fisher.test(table2)
 ```
+
+The Chi Squared table shows that the P-Value of 0.0000000000000002 is so small that it is highly unlikely that the results are by chance.  
+
+$H_0$ the null hypothesis is that the vaccine makes no difference in the female population when it comes to contracting Covid-19. 
+
+$H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a Female contracts Covid-19. 
+
+Therefore we Reject the Null Hypothesis.
+
+The Fisher Exact Test odds ratio 2.05:1, when taking the odds radio and computing it into a percent of effectiveness by using the formula O/(1+O) * 100 you get 67% effectiveness.
+
+Ultimately, the vaccine is 67% effective in the Female population, which is absolutely effective.
 
 # DRUG USERS
 
