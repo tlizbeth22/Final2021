@@ -106,7 +106,7 @@ basicCC <- ggplot(Females,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-This barchart shows that out of the approximately 607 Females who were infected with Covid-19, 32% were given the drug, and 66% were given the placebo. 
+This barchart shows that out of the approximately 607 Females who were infected with Covid-19, 32% were given the drug, and 66% were given the placebo. The chart shows that the drug is effective against covid-19. 
 
 
 ##  Numerical Summary
@@ -166,7 +166,7 @@ basicCC <- ggplot(Druggies,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-This barchart shows that out of the approximately 117 DrugUsers who were infected with Covid-19, 32% were given the drug, and 66% were given the placebo. 
+This barchart shows that out of the approximately 117 DrugUsers who were infected with Covid-19, 32% were given the drug, and 66% were given the placebo. The drug is effective for those who are drug users.
 
 ##  Numerical Summary
 
@@ -197,7 +197,7 @@ Therefore, we Reject the Null Hypothesis.
 
 The Fisher Exact Test odds ratio 1.83:1, when taking the odds radio and computing it into a percent of effectiveness by using the formula O/(1+O) * 100 you get 60% effectiveness.
 
-Ultimately, the vaccine is 60% effective in the DrugUsers population, which is absolutely effective.
+Ultimately, the vaccine is 60% effective in the DrugUsers population, which is effective.
 
 # LGBTQ
 
@@ -260,4 +260,4 @@ Ultimately, the vaccine is 29% effective in the LGBTQ population, which is absol
 
 # Discussion & Conclusion
 
-When looking at the 4 populations, we found that the two populations that had the highest rate of effectiveness were the Females at 67% and the DrugUsers at 60%. Both the Male population and the LGBTQ populations showed that the vaccine was not beneficial to them and were ineffective in protecting from contracting Covid-19, the Males had an 40% effectiveness, while the LGBTQ had a 29% effectiveness, which is not at all effective.
+When looking at the 4 populations, we found that the two populations that had the highest rate of effectiveness were the Females at 67% and the DrugUsers at 60%. Both the Male population and the LGBTQ populations showed that the vaccine was not beneficial to them and were ineffective in protecting from contracting Covid-19, the Males had an 40% effectiveness, while the LGBTQ had a 29% effectiveness, which is not effective.
