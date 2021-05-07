@@ -78,7 +78,7 @@ The Chi Squared table shows that the P-Value of 0.0006181 is so small that it is
 $H_0$ the null hypothesis given taking the vaccine there is no difference of whether males can contract Covid-19 or not.  
 $H_A$ the alternative hypothesis is that the vaccine in fact does make a difference in whether or not a male contracts Covid-19. Therefore we Reject the Null Hypothesis.
 
-The odds ratio from the Fisher Exact test is 1.47:1, when taking the odds radio and computing it into a percent of effectiveness by using the formula O/(1+O)*100 you get 59.5% effectiveness.
+The odds ratio from the Fisher Exact test is 0.68:1 and the confidence interval is between 0.54 - 0.85, which is less than 1. This means that the effectiveness is .68/(1+.68)*100, which is 40.5% effective. 
 
 # FEMALES
 
